@@ -1,0 +1,105 @@
+
+/* used in index.js */
+.loginLayout{
+    display:flex;
+    justify-content:space-between;
+    height:100vh;
+    width:100%;
+    position: absolute;
+    margin-left: -10px;
+    top: 0px;
+}
+
+/* used in rightDiv.js */
+.rightDiv{
+    flex:0.5;
+    background:#227c72;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* used in leftDiv.js */
+.leftDiv{
+    flex:0.5;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+/* used in leftDiv.js */
+.h1{
+    font-family:sans-serif;
+    color:#227c72;
+    margin-bottom:0;
+}
+
+/* used in leftDiv.js */
+.link{
+    color:#565964;
+    cursor: pointer;
+}
+
+
+/* used in leftDiv.js */
+.input{
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* used in leftDiv.js */
+.input:focus{
+    outline: 2px solid #227c72;
+}
+
+/* used in leftDiv.js */
+.loginBtn{
+    padding:20px;
+    background-color: #227c72;
+    color:white;
+    cursor: pointer;
+    border: 0.5px solid white;
+    font-size: medium;
+}
+
+/* when user hovers the login button */
+.loginBtn:hover{
+    background-color: #30b1a2;
+    transition: 300ms;
+}
+
+/* used in leftDiv.js, for google,fb and apple */
+.socialBtn{
+    padding:8px 25px;
+    cursor:pointer;
+    border:1px solid #ffcc00;
+    background:white;
+}
+
+/* when user hovers the social buttons */
+.socialBtn:hover{
+    background-color: rgb(240, 240, 240);
+    transition: 300ms;
+}
+
+.hr{
+    transform: rotate(90deg);
+    height: 50px;
+}
+
+
+/* media queries */
+@media (max-width: 800px){
+
+    /* right side of image will be hidden in small screens */
+    .rightDiv{
+        display:none;
+    }
+
+    .leftDiv{
+        flex:1;
+        padding:20px;
+        margin-top: 20px;
+    }
+}

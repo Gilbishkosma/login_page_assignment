@@ -1,0 +1,18 @@
+
+/* style for navbar and layout. */
+
+.layout{
+    padding: 20px;
+    position: relative;
+}
+
+.navbarContainer{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+
+.navbar{
+    width:100%;
+    max-width: 1300px;
+}
